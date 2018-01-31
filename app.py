@@ -39,15 +39,13 @@ def makeWebhookResult(req):
     speech = "The cost of shipping to " + zone + " is " + str(cost[zone]) + " euros."
     
     print("Response:")
-    speech = "The cost of shipping to Asia is 10000. Thanks"
     print(speech)
 
     return {
-        #"speech": speech,
-        "speech": "The cost of shipping to Asia is 10000. Thanks",
+        "speech": speech,
         "displayText": speech,
-        "data": {speech},
-        "contextOut": [speech],
+        #"data": {speech},
+        #"contextOut": [speech],
         "source": "apiai-onlinestore-shipping"
     }
 
